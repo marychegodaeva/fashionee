@@ -1,0 +1,282 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.cart .order-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.cart .order-wrapper .product-list {
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  padding-bottom: 10px;
+}
+
+.cart .order-wrapper .product-list .product {
+  display: flex;
+  position: relative;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid rgba(68, 68, 68, 10%);
+  padding-bottom: 30px;
+}
+
+.cart .order-wrapper .product-list .product .photo {
+  max-width: 130px;
+  width: 100%;
+  height: 140px;
+  background: rgba(241, 242, 243, 1);
+}
+
+.cart .order-wrapper .product-list .product .product-info {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cart .order-wrapper .product-list .product .product-info .title {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.cart .order-wrapper .product-list .product .product-info .price-wrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cart .order-wrapper .product-list .product .product-info .price-wrapper .price-and-quantity {
+  align-items: center;
+  display: flex;
+  gap: 48px;
+}
+
+.cart .order-wrapper .product-list .product .product-info .price-wrapper .price-and-quantity .quantity {
+  display: flex;
+  gap: 20px;
+  padding: 17px 23px;
+  background: rgba(248, 248, 251, 1);
+}
+
+.cart .order-wrapper .product-list .product .product-info .price-wrapper .price-and-quantity .quantity .count-button {
+  cursor: pointer;
+  color: rgba(153, 153, 153, 1);
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.cart .order-wrapper .product-list .product .product-info .price-wrapper .price-and-quantity .quantity .count {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.cart .order-wrapper .product-list .product .product-info .price-wrapper .total-price {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.cart .order-wrapper .product-list .product .product-info .close {
+  border: 1px solid rgba(68, 68, 68, 10%);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 10px;
+  color: rgba(68, 68, 68, 10%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding: 7px 0 8px 0;
+  cursor: pointer;
+}
+
+.cart .order-wrapper .order {
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart .order-wrapper .order .title {
+  font-family: Josefin Sans;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.cart .order-wrapper .order .button-wrapper {
+  max-width: unset;
+}
+
+.cart .order-wrapper .order .order-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart .order-wrapper .order .order-price-wrapper .price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(68, 68, 68, 1);
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(68, 68, 68, 10%);
+}
+
+.cart .order-wrapper .order .order-price-wrapper .price-row .name .additional {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.cart .order-wrapper .order .order-price-wrapper .price-row.delimiter {
+  border-bottom: 2px solid rgba(0, 0, 0, 1)
+}
+
+.cart .order-wrapper .order .order-price-wrapper .price-row.total {
+  border-bottom: none;
+  font-size: 20px;
+  line-height: 34px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.cart .order-wrapper .order .order-price-wrapper .price-row.total .price {
+  font-size: 25px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.cart .order-wrapper .order .order-price-wrapper .price-row .price {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px; 
+  color: rgba(68, 68, 68, 1);
+  padding: 0;
+}
+
+.cart .promo-code-wrapper {
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 250px;
+}
+
+.cart .promo-code-wrapper .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart .promo-code-wrapper .info .title {
+  font-family: Josefin Sans;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.cart .promo-code-wrapper .info .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(68, 68, 68, 1);
+}
+
+.cart .promo-code-wrapper .promo-code {
+  display: flex;
+  gap: 30px;
+}
+
+.cart .promo-code-wrapper .promo-code .button-wrapper {
+  max-width: 54px;
+  width: 100%;
+}
+
+.cart .promo-code-wrapper .promo-code .button-wrapper .button{
+  padding: 17px 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart .promo-code-wrapper {
+    margin-bottom: 120px;
+  }
+
+  .cart .promo-code-wrapper {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cart .order-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cart .order-wrapper .order {
+    max-width: 550px;
+  }
+
+  .cart .order-wrapper .order .title {
+    text-align: center;
+  }
+
+  .cart .promo-code-wrapper {
+    margin: 0 auto 60px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cart .order-wrapper .product-list .product {
+    flex-wrap: wrap;
+  }
+
+  .cart .order-wrapper .product-list .product .photo {
+    max-width: 200px;
+  }
+
+  .cart .promo-code-wrapper .find-us {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cart .order-wrapper .product-list .product {
+    width: 100%;
+  }
+
+  .cart .order-wrapper .product-list .product .product-info .price-wrapper .price-and-quantity {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
